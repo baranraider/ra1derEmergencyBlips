@@ -1,8 +1,8 @@
-Ra1derEmergencyBlips
+ra1derEmergencyBlips
 
-- QB-İnput gereklidir.
+- qb-input gereklidir.
 
-https://www.dosya.tc/server40/fv9npc/tgiann-infinity.rar.html
+İnfinity Sistem https://www.dosya.tc/server40/fv9npc/tgiann-infinity.rar.html (Required)
 
 https://www.youtube.com/watch?v=cCfK3KQ8Q04
 
