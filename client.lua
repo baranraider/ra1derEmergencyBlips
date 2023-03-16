@@ -225,12 +225,10 @@ end)
 
 RegisterNetEvent("tgiann-emergencyblip:kapat")
 AddEventHandler("tgiann-emergencyblip:kapat", function()
-	QBCore.Functions.TriggerCallback('tgiann-base:item-kontrol', function(qtty)
-		if qtty > 0 then
-			TriggerServerEvent('tgiann-gps:acikgps-kapat', false)
-		else
-			QBCore.Functions.Notify('Üzerinde GPS Yok!')	
-		end
-	end, 'gps')	
+    local hasItem = QBCore.Functions.HasItem('gps')
+    if hasItem then
+        TriggerServerEvent('tgiann-gps:acikgps-kapat', false)
+    else
+        QBCore.Functions.Notify('Üzerinde GPS Yok!', 'error')    
+    end
 end)
-
